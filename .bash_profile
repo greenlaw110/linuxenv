@@ -7,11 +7,11 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin:$HOME/tst:$HOME/tbin:/sbin:/usr/sbin
+PATH=$PATH:$HOME/bin:$HOME/tst:$HOME/tbin:/sbin:$PATH
 
 export PATH
 
 cd env
-svn up
+git pull
 
 screen -r -t ansi
