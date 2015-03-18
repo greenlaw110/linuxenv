@@ -10,7 +10,7 @@ alias which='type -a'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
-alias du='du -kh'       # Makes a more readable output.
+alias du='du -kh --max-depth 1'       # Makes a more readable output.
 alias df='df -kTh'
 
 #-------------------------------------------------------------
