@@ -1,0 +1,8 @@
+cd ~
+ln -sf ~/env/.bash_aliases .bash_aliases
+ln -sf ~/env/.bash_logout .bash_logout
+ln -sf ~/env/.bash_profile .bash_profile
+ln -sf ~/env/.bashrc .bashrc
+ln -sf ~/env/.profile .profile
+ln -sf ~/env/.vim .vim
+ln -sf ~/env/.vimrc .vimrc
