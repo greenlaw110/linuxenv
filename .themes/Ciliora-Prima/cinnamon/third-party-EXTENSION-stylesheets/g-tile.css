@@ -1,0 +1,138 @@
+.grid-panel {
+    border-image: url("../background-assets/popup.svg") 7;
+    width:240px;
+    padding: 6px;
+}
+
+.grid-title {
+    padding: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align:center;
+}
+
+.table {
+}
+
+.table-element {
+    border-image: url("../misc-assets/calendar-work-day.svg") 3;
+}
+
+.table-element:hover, .table-element:activate {
+    border-image: url("../misc-assets/calendar-today.svg") 3;
+}
+
+.top-box {
+    padding: 4px;
+}
+
+.bottom-box {
+    padding: 10px;
+    display: block;
+}
+
+.very-bottom-box {
+    padding: 60px;
+    display: block;
+}
+
+.settings-label {  
+}
+
+.settings-label:hover {
+}
+
+.grid-preview {
+     background-color: transparent;
+     border-color: transparent;
+}
+
+.grid-preview:activate {
+    background-color: rgba(102, 153, 204, 0.35);
+    border: 1px solid #6699CC;
+}
+
+
+/*---buttons---*/
+
+.settings-button {
+    border-image: url("../buttons/button.svg") 7;
+    padding: 3px;
+    width: 44 px;
+    height: 32px;
+    color: #fff;
+}
+
+.settings-button:activate {
+    border-image: url("../buttons/button-pressed.svg") 7;
+}
+
+.settings-button:activate:hover {
+    border-image: url("../buttons/button-pressed.svg") 7;
+}
+
+.settings-button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+}
+
+.close-button {
+    border-image: url("../buttons/button.svg") 7;
+    background-image: url("../misc-assets/auto-close.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.close-button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+    background-image: url("../misc-assets/auto-close.svg");
+    width: 24px;
+    height: 24px;
+}
+
+
+/*---icons---*/
+
+.tiling-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.tiling-icon:hover {
+    width: 24px;
+    height: 24px;
+}
+
+.tiling-icon:activate {
+    width: 24px;
+    height: 24px;
+}
+
+.animation-icon {
+    background-image: url("../misc-assets/animation.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.auto-close-icon {
+    background-image: url("../misc-assets/auto-close.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.action-main-list {
+    background-image: url("../misc-assets/auto-tile-1.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.action-two-list {
+    background-image: url("../misc-assets/auto-tile-2.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.action-scale {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,258 @@
+.slingshot.popup-menu-content {
+    padding: 5px;
+}
+
+.slingshot .separator {
+    background-color: transparent;
+}
+
+/*--- Entries ---*/
+
+.slingshot .entry,
+.slingshot .entry:hover {
+    border-image: url("../misc-assets/entry.svg") 6;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 24px;
+    width: 220px;
+    color: rgba(255, 255, 255, .4);
+    caret-color: rgba(255, 255, 255, .4);
+    font-size: 9pt;
+    font-weight: normal;
+    padding: 5px 12px 4px 12px;
+}
+
+.slingshot .entry:focus {
+    border-image: url("../misc-assets/entry-focused.svg") 6;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 24px;
+    width: 220px;
+    color: #fff;
+    caret-color: #fff;
+    font-size: 10pt;
+    font-weight: bold;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #668694;
+    padding: 5px 12px 4px 12px;
+}
+
+/*--- Buttons ---*/
+
+.slingshot .button {
+    border-image: url("../buttons/button.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 8pt;
+    padding: 8px;
+    padding-top: 9px;
+}
+
+.slingshot .button:hover {
+    border-image: url("../buttons/button-hover.svg") 7;
+}
+
+.slingshot .button:active {
+    border-image: url("../buttons/button-pressed.svg") 7;
+}
+
+.slingshot .button:checked {
+    border-image: url("../buttons/button-focused.svg") 7;
+    font-weight: bold;
+}
+
+
+/*--- App Buttons ---*/
+
+.slingshot .button.app {
+    border-image: none;
+    border-width: 0;
+    font-size: 9pt;
+    padding: 0;
+}
+
+.slingshot .app:hover {
+    border-image: url("../background-assets/hover.svg") 7;
+    background-color: transparent;
+}
+
+.slingshot .app:focus {
+    border-image: url("../background-assets/hover.svg") 7;
+    background-color: transparent;
+}
+
+
+/*--- Sidebar Buttons ---*/
+
+.slingshot .sidebar {
+    padding-left: 8px;
+    padding-right: 3px;
+}
+
+.slingshot .sidebar .button {
+    border-image: none;
+    padding: 5px;
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-color: transparent;
+    font-size: 9pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.slingshot .sidebar .button:hover,
+.slingshot .sidebar .button:hover:checked,
+.slingshot .sidebar .button:active:checked {
+    border-image: url("../background-assets/hover.svg") 7;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.slingshot .sidebar .button:active,
+.slingshot .sidebar .button:hover:active {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: inset 0 0 0 transparent;
+}
+
+.slingshot .sidebar .button:checked {
+    border-image: url("../misc-assets/highlighted-mirrored.svg") 7;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.slingshot .entry,
+.slingshot .sidebar .button {
+    text-shadow: none;
+    icon-shadow: none;
+}
+
+
+/*--- Linked Buttons ---*/
+
+
+/* Middle button */
+
+.slingshot .linked .button {
+    border-image: url("../buttons/linked-button-middle.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #888;
+}
+
+.slingshot .linked .button:hover {
+    border-image: url("../buttons/linked-button-middle-hover.svg") 7;
+}
+
+.slingshot .linked .button:active {
+    border-image: url("../buttons/linked-button-middle-pressed.svg") 7;
+}
+
+.slingshot .linked .button:checked {
+    border-image: url("../buttons/linked-button-middle-pressed.svg") 7;
+    color: #fff;
+}
+
+
+/* Leftmost button */
+
+.slingshot .linked .button:first-child {
+    border-image: url("../buttons/linked-button-left.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 6px;
+    padding-right: 5px;
+    color: #888;
+}
+
+.slingshot .linked .button:hover:first-child {
+    border-image: url("../buttons/linked-button-left-hover.svg") 7;
+}
+
+.slingshot .linked .button:active:first-child {
+    border-image: url("../buttons/linked-button-left-pressed.svg") 7;
+    border-right-width: 0;
+}
+
+.slingshot .linked .button:checked:first-child {
+    border-image: url("../buttons/linked-button-left-pressed.svg") 7;
+    padding-right: 5px;
+    color: #fff;
+}
+
+
+/* Rightmost button */
+
+.slingshot .linked .button:last-child {
+    border-image: url("../buttons/linked-button-right.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border-right-width: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 6px;
+    padding-left: 5px;
+    color: #888;
+}
+
+.slingshot .linked .button:hover:last-child {
+    border-image: url("../buttons/linked-button-right-hover.svg") 7;
+}
+
+.slingshot .linked .button:active:last-child,
+.slingshot .linked .button:active:hover:last-child {
+    border-image: url("../buttons/linked-button-right-pressed.svg") 7;
+    border-right-width: 0;
+}
+
+.slingshot .linked .button:checked:last-child {
+    border-image: url("../buttons/linked-button-right-pressed.svg") 7;
+    padding-left: 5px;
+    color: #fff;
+}
+
+
+/* Linked single button */
+
+.slingshot .linked .button:only-child {
+    border-image: url("../buttons/button.svg") 7;
+    background-gradient-direction: none;
+    background-color: transparent;
+    border-width: 0;
+    box-shadow: none;
+    border-radius: 0;
+    color: #888;
+}
+
+.slingshot .linked .button:hover:only-child {
+    border-image: url("../buttons/button-hover.svg") 7;
+}
+
+.slingshot .linked .button:active:only-child {
+    border-image: url("../buttons/button-pressed.svg") 7;
+}
+
+.slingshot .linked .button:checked:only-child {
+    border-image: url("../buttons/button-pressed.svg") 7;
+    color: #fff;
+}

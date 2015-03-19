@@ -56,3 +56,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Miscs
 alias psjava='ps aux | grep java | grep -v grep'
+alias npp='vim'
