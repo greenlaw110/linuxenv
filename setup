@@ -6,3 +6,4 @@ ln -sf ~/env/.bashrc .bashrc
 ln -sf ~/env/.profile .profile
 ln -sf ~/env/.vim .vim
 ln -sf ~/env/.vimrc .vimrc
+ln -sf ~/env/mint-cinnamon-themes .themes

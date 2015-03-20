@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4308"
+   height="14"
+   viewBox="0 0 16 16"
+   width="14"
+   version="1.1"
+   inkscape:version="0.48+devel r"
+   sodipodi:docname="c2.svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="695"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4231" />
+  <metadata
+     id="metadata4313">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <g
+       id="g4231"
+       transform="scale(0.8)">
+      <path
+         id="path4206"
+         d="m19.375 10c0 2.4546-1.0112 4.894-2.7478 6.6296s-4.1772 2.746-6.6319 2.7458c-2.4542 0-4.8926-1.01-6.6271-2.746-1.7344-1.735-2.7437-4.175-2.7437-6.629 0.00002-2.4543 1.0093-4.8935 2.7437-6.6291 1.7345-1.7356 4.1729-2.7462 6.6276-2.7464 2.4542-0.00012 4.8952 1.0102 6.6322 2.7458 1.736 1.7357 2.747 4.1751 2.747 6.6297z"
+         fill-opacity="0"
+         stroke="#000"
+         stroke-width="1.249"
+         style="stroke:#2c628b;stroke-opacity:1;fill:#ff0000;fill-opacity:0;stroke-width:1.24875;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         id="path4208"
+         d="m15 10c0 2.6181-2.3841 5.0002-5.0022 5-2.6182-0.000155-4.9978-2.3822-4.9978-5s2.3796-4.9998 4.9978-5 5.0022 2.3819 5.0022 5z"
+         style="fill:#2c628b;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+/* Decorations */
+
+UnityDecoration {
+    -UnityDecoration-extents: 21px 6px 6px 6px;
+    -UnityDecoration-input-extents: 10px;
+
+    -UnityDecoration-shadow-offset-x: 1px;
+    -UnityDecoration-shadow-offset-y: 5px;
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.75);
+    -UnityDecoration-active-shadow-radius: 30px;
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.3);
+    -UnityDecoration-inactive-shadow-radius: 25px;
+
+    -UnityDecoration-glow-size: 10px;
+    -UnityDecoration-glow-color: rgb (221, 72, 20);
+
+    -UnityDecoration-title-indent: 10px;
+    -UnityDecoration-title-fade: 35px;
+    -UnityDecoration-title-alignment: 0.0;
+}
+
+UnityDecoration.top {
+    border: 1px solid #4682c8; /* shade (@dark_bg_color, 1.04) - shade (@dark_bg_color, 1.5) */
+    border-bottom-width: 0;
+    border-radius: 0px 0px 0 0;
+    padding: 1px 6px 0 6px;
+
+    
+
+    background-color: #4682c8;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#4682c8, 1.0)),
+                                     to (shade (#4682c8, 1.0)));
+
+    color: white;
+    text-shadow: none;
+}
+
+UnityDecoration.top:backdrop {
+    border: 1px solid rgba (14, 13, 0, 0.03); /* @dark_bg_color - shade (#474642, 0.92) */;
+    border-bottom-width: 0;
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#EBEBEB, 0.92)),
+                                     to (#EBEBEB));
+    color: black;
+}
+
+UnityDecoration.left,
+UnityDecoration.right {
+    background-color: shade (@bg_color, 0.7);
+    background-repeat: repeat-x;
+
+    /* start color: mix of the top border color and bg-image gradient end */
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#4682c8, 1.0)),
+                                     to (shade (#4682c8, 1.0)));
+}
+
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop {
+    /* start color: mix of the top border color and bg-image gradient end */
+   background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#EBEBEB, 0.92)),
+                                     to (#EBEBEB));
+}
+
+UnityDecoration.bottom {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#4682c8, 1.0)),
+                                     to (shade (#4682c8, 1.0)));
+    background-color: shade (@bg_color, 0.7);
+}
+
+
+UnityDecoration.bottom:backdrop {
+    /* start color: mix of the top border color and bg-image gradient end */
+   background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (#EBEBEB, 0.92)),
+                                     to (#EBEBEB));
+}
+
+/* Panel Style */
+
+UnityPanelWidget,
+.unity-panel {
+	background-image: -gtk-gradient (linear,
+                                     left bottom, left top,
+                                     from (shade (#d3daed, 1.05)),
+                                     color-stop (0.50, shade (#d2d9ec, 1.00)),
+                                     color-stop (0.51, shade (#e5eaf5, 1.00)),
+                                     to (shade (#fefeff, 1.05))); 
+
+	border-width: 0;
+	border-style: none;
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+	color: black;
+         background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#fafafa, 1.05)),
+                                     color-stop (0.89, shade (#f1f8fe, 1.00)),
+                                     to (shade (#cddaea, 1.05))); 
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    border-width: 1px 1px 0 1px;
+    icon-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+}
+
+.unity-panel.menubar:backdrop,
+.unity-panel .menubar *:backdrop {
+    color: @backdrop_dark_fg_color;
+}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#177acf, 1.05)),
+                                     color-stop (0.4, shade (#177acf, 1.00)),
+                                     to (shade (#177acf, 1.05)));
+     border-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (#177acf, 1.05)),
+                                     color-stop (0.4, shade (#177acf, 1.00)),
+                                     to (shade (#177acf, 1.05)));
+
+    /*box-shadow: inset 0 -1px shade (@dark_bg_color, 0.95);*/
+    box-shadow: none;
+    background-color: #e5e5e5;
+    text-shadow: none;
+    color: white;
+}

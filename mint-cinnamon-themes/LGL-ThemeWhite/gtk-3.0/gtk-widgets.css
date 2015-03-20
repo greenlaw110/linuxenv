@@ -1,0 +1,547 @@
+* {
+	-GtkToolButton-icon-spacing: 4;
+	-GtkTextView-error-underline-color: @error_color;
+	-GtkPaned-handle-size: 1;
+
+	-GtkCheckButton-indicator-size: 16;
+	-GtkCheckMenuItem-indicator-size: 12;
+
+	-GtkScrolledWindow-scrollbar-spacing: 0;
+	-GtkScrolledWindow-scrollbars-within-bevel: 1;
+
+	-GtkToolItemGroup-expander-size: 12;
+	-GtkExpander-expander-size: 12;
+
+	-GtkMenu-horizontal-padding: 0;
+	-GtkMenu-vertical-padding: 0;
+
+	-GtkWidget-link-color: @link_color;
+	-GtkWidget-visited-link-color: @visited_link_color;
+	-GtkIMHtml-hyperlink-color: @link_color;
+	-GtkHTML-link-color: @link_color;
+
+	-WnckTasklist-fade-overlay-rect: 0;
+
+	-GtkWindow-resize-grip-width: 0;
+	-GtkWindow-resize-grip-height: 0;
+
+	-GtkWidget-focus-padding: 0;
+	-GtkWidget-focus-line-width: 1px;
+
+	background-clip: padding-box;
+
+	engine: unico;
+	outline-color: alpha (@theme_selected_bg_color, 0);
+	outline-offset: 5px;
+}
+
+/***************
+ * Base States *
+ ***************/
+
+GtkWindow {
+	background-color: @theme_base_color;
+	color: @theme_fg_color;
+}
+
+GtkPaned {
+    background-color: @theme_base_color;
+}
+
+GtkWindow:backdrop {
+}
+
+GtkEventBox {
+    background-color: @theme_base_color;
+}
+
+*:selected,
+*:selected:focus {
+	background-color: @theme_selected_bg_color_1;
+	color: @theme_selected_fg_color_1;
+}
+
+*:insensitive {
+	background-color: @insensitive_bg_color;
+	color: @insensitive_fg_color;
+	/*text-shadow: 1px 1px @insensitive_text_shadow_color;*/
+	border-color: @insensitive_border_color;
+}
+
+GtkImage,
+GtkImage:insensitive,
+GtkLabel,
+GtkLabel:insensitive {
+	background-color: transparent;
+}
+
+/************
+ * Tooltips *
+ ************/
+.tooltip {
+	padding: 4px;
+	border-style: none;
+	background-color: @theme_tooltip_bg_color;
+	color: @theme_tooltip_fg_color;
+	font-weight: normal;
+}
+
+.tooltip * {
+	background-color: transparent;
+}
+
+/*****************
+ * Miscellaneous *
+ *****************/
+
+.spinner:active {
+	transition: 750ms linear loop;
+}
+
+.floating-bar {
+	background-image: linear-gradient(to bottom, @theme_base_color 20%, shade(@theme_base_color, 0.9));
+	background-color: @theme_base_color;
+	border-color: @border_color;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.floating-bar.top {
+	border-top-width: 0;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.floating-bar.right {
+	border-right-width: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.floating-bar.bottom {
+	border-bottom-width: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.floating-bar.left {
+	border-left-width: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.floating-bar .button {
+	-GtkButton-image-spacing: 0;
+	-GtkButton-inner-border: 0;
+	background-color: alpha(@theme_base_color, 0.0);
+	background-image: none;
+	border-style: none;
+	border-image: none;
+}
+
+.view.rubberband,
+.rubberband {
+	background-color: alpha(@theme_selected_bg_color, 0.35);
+	border-color: @theme_selected_bg_color;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+}
+
+GtkStatusbar {
+	-GtkStatusbar-shadow-type: none;
+	background-color: @theme_bg_color;
+	padding: 5px;
+	color: @theme_clear_fg_color;
+}
+
+.dnd {
+	border-width: 1px;
+	border-style: solid;
+	border-color: @theme_selected_bg_color;
+	border-radius: 0;
+}
+
+GtkTreeView.view.separator,
+GtkTreeView.separator,
+.separator,
+.separator:hover {
+	color: shade(@border_color, 1.0);
+}
+
+.pane-separator,
+.pane-separator:hover,
+.pane-separator:selected {
+	color: @theme_bg_color;
+	background-color: @theme_bg_color;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pane-separator {
+	background-image: url("img/pane-separator-grip-horz.png");
+}
+
+.pane-separator.vertical {
+	background-image: url("img/pane-separator-grip-vert.png");
+}
+
+.level-bar.trough {
+    padding: 0;
+}
+
+.level-bar.fill-block {
+	background-color: @progressbar_bg_color;
+}
+
+.level-bar.fill-block.level-high {
+	background-color: @progressbar_bg_color;
+}
+
+.level-bar.fill-block.level-low {
+	background-color: @progressbar_bg_color;
+}
+
+.level-bar.fill-block.empty-fill-block {
+	background-color: transparent;
+}
+
+/****************
+ * Text Entries *
+ ****************/
+
+.entry {
+	-GtkWidget-focus-line-width: 0;
+	border-style: solid;
+	padding: 4px;
+	color: @entry_text_color;
+	background-color: @theme_base_color;
+}
+
+.entry.progressbar {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+
+.entry:selected {
+	color: @theme_selected_fg_color;
+	background-color: @theme_selected_bg_color;
+}
+
+.entry:insensitive {
+	color: @insensitive_fg_color;
+}
+
+.entry {
+	background-color: @entry_bg_color;
+	background-image: linear-gradient(to bottom, @entry_inner_border_color 1px, @entry_bg_color 2px);
+}
+
+.entry:focus {
+	background-image: none;
+}
+
+.entry:insensitive {
+	background-image: linear-gradient(to bottom, @entry_insensitive_bg_color, @entry_insensitive_bg_color);
+}
+
+/*******************
+ * Symbolic images *
+ *******************/
+
+.image {
+	color: @internal_element_color;
+}
+
+.image:hover {
+	color: @internal_element_hover_color;
+}
+
+.image:selected {
+	color: @theme_selected_fg_color;
+}
+
+/*****************
+ * Color Chooser *
+ *****************/
+
+GtkColorSwatch,
+GtkColorSwatch:selected {
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+	border-color: @color_swatch_border_color;
+	background-color: transparent;
+	background-clip: border-box;
+}
+
+GtkColorSwatch:hover,
+GtkColorSwatch:selected:hover {
+	border-color: @color_swatch_hover_border_color;
+}
+
+GtkColorChooserWidget #add-color-button:hover,
+GtkColorChooserWidget #add-color-button:selected:hover {
+}
+
+.color-active-badge,
+.color-active-badge:selected {
+	border-style: solid;
+	border-width: 2px;
+	background-color: transparent;
+}
+
+.color-active-badge.color-light,
+.color-active-badge.color-light:hover {
+	border-color: @color_active_badge_light_border_color;
+	color: @color_active_badge_light_color;
+}
+
+.color-active-badge.color-dark,
+.color-active-badge.color-dark:hover {
+	border-color: @color_active_badge_dark_border_color;
+	color: @color_active_badge_dark_color;
+}
+
+GtkColorEditor GtkColorSwatch.color-light:hover,
+GtkColorEditor GtkColorSwatch.color-dark:hover {
+	background-image: none;
+}
+
+/**********
+ * Frames *
+ **********/
+
+.frame {
+	border-width: 1px;
+	border-color: transparent;
+	border-style: solid;
+	border-radius: 1px;
+	background-color: @theme_base_color;
+	padding: 0;
+}
+
+GtkScrolledWindow.frame {
+	border-style: solid;
+	border-color: @border_color;
+	border-width: 1px;
+	border-radius: 1px;
+	padding: 0;
+}
+
+GtkScrolledWindow GtkViewport.frame {
+	border-style: none;
+}
+
+/***********
+ * Sidebar *
+ ***********/
+
+.sidebar,
+.sidebar .view {
+	background-color: @sidebar_bg_color;
+	color: @theme_fg_color;
+}
+
+.sidebar .radio,
+.sidebar .radio:focus,
+.sidebar .radio:selected {
+	background-image: none;
+	background-color: transparent;
+}
+
+/*******
+ * OSD *
+ *******/
+
+.osd {
+	color: @osd_fg_color;
+	background-color: @osd_bg_color;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @osd_border_color;
+}
+
+/****************
+ * GtkAssistant *
+ ****************/
+
+GtkAssistant .sidebar .highlight {
+	color: @theme_fg_color;
+	font: bold;
+}
+
+GtkAssistant .sidebar {
+	padding: 12px;
+	border-width: 1px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: @gtkassistant_sidebar_border_color;
+	color: mix(@theme_fg_color, @theme_bg_color, 0.40);
+	background-color: shade(@theme_bg_color, 0.97);
+}
+
+/*************
+ * GtkSwitch *
+ *************/
+
+GtkSwitch {
+}
+
+GtkScale.progressbar,
+GtkSwitch.trough:active {
+	color: @theme_fg_color;
+}
+
+GtkSwitch.trough {
+	background-image: -gtk-gradient(linear, left top, left bottom, from(shade(@core_color_a, 0.98)), to(shade(@core_color_a, 1.12)));
+	color: shade(@theme_bg_color, 0.4);
+}
+
+GtkSwitch.trough:active {
+	background-image: -gtk-gradient(linear, left top, left bottom, from(shade(@core_color_a, 0.98)), to(shade(@core_color_a, 1.12)));
+}
+
+GtkSwitch.slider {
+	background-color: shade(@core_color_b, 0.86);
+	border-width: 1px;
+	border-radius: 2px;
+	border-style: solid;
+	border-color: shade(@core_color_b, 0.8);
+	padding: 0px 0px 1px 0px;
+}
+
+GtkSwitch.slider:insensitive {
+	background-color: @insensitive_bg_color;
+}
+
+GtkTreeView {
+	-GtkTreeView-vertical-separator: 0;
+	-GtkTreeView-expander-size: 12px;
+}
+
+GtkTreeView.dnd {
+	border-color: @internal_element_color;
+	border-radius: 2px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+GtkTreeView:selected:focus {
+}
+
+GtkTreeView row:nth-child(even),
+GtkTreeView row:nth-child(odd) {
+	/*box-shadow: inset 0 -1px 0 0 @theme_bg_color;*/
+}
+
+GtkViewport,
+GtkIconView {
+	border-radius: 3px;
+	padding: 0;
+	background-color: @theme_base_color;
+}
+
+GtkIconView.view.cell:selected,
+GtkIconView.view.cell:selected:focus {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+	border-radius: 4px;
+}
+
+.view,
+GtkTreeView {
+	background-color: @theme_base_color;
+	color: @theme_text_color;
+}
+
+.view:selected,
+GtkTreeView:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+
+.view:insensitive,
+GtkTreeView:insensitive {
+	background-color: @insensitive_bg_color;
+	color: @insensitive_fg_color;
+}
+
+row:hover {
+	border-style: none;
+	background-color: @theme_hover_bg_color;
+}
+
+row:insensitive {
+	border-width: 0;
+}
+
+row:selected,
+row:selected:focus {
+	border-width: 0;
+}
+
+row:selected:focus,
+.cell:selected {
+	background-image: -gtk-gradient(linear, left top, left bottom, from(@theme_selected_bg_color), to(@theme_selected_bg_color));
+}
+
+.cell {
+	-GtkWidget-focus-line-width: 0;
+	color: @theme_text_color;
+	padding: 2px;
+	border-width: 0;
+}
+
+.cell:selected {
+	color: @theme_selected_fg_color;
+}
+
+.expander {
+	engine: none;
+ 	border-style: none; 
+	border-width: 0; 
+	color: shade(@theme_selected_fg_color_1, 0.8);
+	border-color: shade(@theme_selected_fg_color_1, 0.8); 
+	background-color: shade(@theme_selected_fg_color_1, 0.8);
+}
+
+.expander:active {
+}
+
+.expander:hover {
+}
+
+.expander row {
+	border-radius: 0;
+}
+
+.expander row:selected,
+.expander row:selected:focus {
+	color: @theme_base_color; 
+	border-color: @theme_base_color;
+	background-color: @theme_base_color;
+}
+
+GtkCalendar {
+	padding: 2px;
+}
+
+GtkCalendar.view {
+	border-radius: 1px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: @theme_selected_bg_color;
+	padding: 2px;
+}
+
+GtkCalendar:inconsistent {
+    background-image: none;
+    color: @insensitive_fg_color;
+}
+
+.grip {
+	background-color: transparent;
+}
+

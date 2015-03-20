@@ -1,0 +1,96 @@
+#sticky-scrollview StScrollBar {
+    padding: 0;
+    padding-left: 6px;
+}
+
+.sticky-button {
+    height: 24px;
+    width: 24px;
+}
+
+.sticky-button-selected {
+    border-image: none;
+    height: 24px;
+    width: 24px;
+}
+
+.sticky-button-selected * {
+    color: #8198af;
+}
+
+.sticky-button-box {
+    padding: 0;
+    padding-top: 2px;
+    height: 24px;
+}
+
+.sticky-main-box-staples {
+    border-image: url("../background-assets/popup.svg") 7;
+    background-color: transparent;
+    border-radius: 0;
+    text-shadow: none;
+    min-width: 210px;
+    padding: 5px 11px;
+    padding-top: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sticky-main-box-none {
+    border-image: url("../background-assets/popup.svg") 7;
+    background-color: transparent;
+    border-radius: 0;
+    text-shadow: none;
+    min-width: 210px;
+    padding: 5px 11px;
+    padding-top: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sticky-top-box {
+    font-weight: bold;
+    color: #fff;
+}
+
+.sticky-bottom-box {
+    font-weight: bold;
+    color: #fff;
+}
+
+.sticky-title-label {
+    padding: 0px 4px 0px 4px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.sticky-information-label {
+    padding: 0px 4px 0px 4px;
+}
+
+.sticky-text-box {
+    background-gradient-direction: none;
+    box-shadow: inset 0 0 transparent;
+    border: 0 transparent;
+    border-radius: 0;
+    border-image: url("../misc-assets/entry.svg") 7;
+    padding: 6px;
+}
+
+.sticky-text-box:active {
+    background-gradient-direction: none;
+    box-shadow: inset 0 0 transparent;
+    border: 0 transparent;
+    border-radius: 0;
+    border-image: url("../misc-assets/entry-focused.svg") 7;
+    padding: 6px;
+}
+
+#sticky-note-entry {
+    padding: 6px;
+    color: #fff;
+    selected-color: #fff;
+    caret-color: #fff;
+    caret-size: 1px;
+    selection-background-color: #8198af;
+}

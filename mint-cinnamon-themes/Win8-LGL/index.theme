@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=w8-n
+Comment=Based on Ambiance theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=w8-n
+MetacityTheme=w8-n
+IconTheme=ubuntu-mono-dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close
