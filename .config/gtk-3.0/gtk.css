@@ -1,0 +1,12 @@
+.nemo-desktop.nemo-canvas-item {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+
+.nemo-desktop.nemo-canvas-item:selected {
+    background-color: alpha(#efefef, 0.7);
+    background-image: none;
+    color: #000;
+    text-shadow: none;
+}

@@ -1,4 +1,5 @@
 cd ~
+ln -sf ~/env/bin bin
 ln -sf ~/env/.bash_aliases .bash_aliases
 ln -sf ~/env/.bash_logout .bash_logout
 ln -sf ~/env/.bash_profile .bash_profile
@@ -7,3 +8,9 @@ ln -sf ~/env/.profile .profile
 ln -sf ~/env/.vim .vim
 ln -sf ~/env/.vimrc .vimrc
 ln -sf ~/env/mint-cinnamon-themes .themes
+mkdir -p /home/luog/.config/fontconfig
+ln -sf ~/env/.config/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
+mkdir -p /home/luog/.config/gtk-3.0
+ln -sf ~/env/.config/gtk-3.0/gtk.css ~/.config/gtk-3.0/gtk.css
+chmod +x ~/bin/*
+chmod +x ~/bin_local/*
