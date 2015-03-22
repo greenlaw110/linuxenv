@@ -42,13 +42,14 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
+# some aliases for typo
 alias xs='cd'
 alias vf='cd'
 alias moer='more'
 alias moew='more'
 alias kk='ll'
 alias cls='clear'
+alias cd..='cd ..'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
