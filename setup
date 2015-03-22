@@ -1,12 +1,16 @@
 cd ~
+rm -f bin
 ln -sf ~/env/bin bin
+mkdir bin_local
 ln -sf ~/env/.bash_aliases .bash_aliases
 ln -sf ~/env/.bash_logout .bash_logout
 ln -sf ~/env/.bash_profile .bash_profile
 ln -sf ~/env/.bashrc .bashrc
 ln -sf ~/env/.profile .profile
+rm -f .vim
 ln -sf ~/env/.vim .vim
 ln -sf ~/env/.vimrc .vimrc
+rm -f .themes
 ln -sf ~/env/mint-cinnamon-themes .themes
 mkdir -p /home/luog/.config/fontconfig
 ln -sf ~/env/.config/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
