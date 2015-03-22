@@ -1,4 +1,5 @@
 alias cls=clear
+alias home=cd
 alias rsrc='. ~/.bashrc'
 alias vir='vim -R'
 alias rm='rm -i'
@@ -7,6 +8,7 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias j='jobs -l'
 alias which='type -a'
+alias cd..='cd ..'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
@@ -48,8 +50,6 @@ alias vf='cd'
 alias moer='more'
 alias moew='more'
 alias kk='ll'
-alias cls='clear'
-alias cd..='cd ..'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
