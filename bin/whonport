@@ -1,0 +1,2 @@
+#!/bin/sh
+fuser $1/tcp
