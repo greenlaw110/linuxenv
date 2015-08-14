@@ -1,0 +1,12 @@
+/* ===================================================================
+   ! Snap/Tile OSD
+   ===================================================================*/
+
+.snap-osd {
+    border-image: url("background-assets/popup.svg") 9;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 14px;
+    color: $text-primary;
+    text-align: center;
+}

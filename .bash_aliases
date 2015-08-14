@@ -14,6 +14,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 alias du='du -kh --max-depth 1'       # Makes a more readable output.
 alias df='df -kTh'
+alias slm='sublime'
+alias s2ram='sudo /usr/sbin/s2ram'
 
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls)

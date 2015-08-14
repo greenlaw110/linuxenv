@@ -1,0 +1,43 @@
+/* ===================================================================
+   ! Alt Tab
+   ===================================================================*/
+
+#altTabPopup {
+    padding: 8px;
+    spacing: 1px;
+}
+
+.alt-tab-app {}
+
+.switcher-list {
+    border-image: url("background-assets/popup-outside.svg") 7;
+    color: $text-primary;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+
+    StLabel { padding-top: .4em; }
+
+    .item-box {
+        border-image: url("background-assets/popup-inside-2.svg") 7;
+        padding: 8px;
+
+        &:selected {
+            border-image: url("background-assets/popup-inside-active.svg") 7;
+            color: $text-primary;
+        }
+    }
+
+    &-item-container { spacing: 2px; }
+
+    .thumbnail { width: 256px; }
+
+    .separator {/*!*/}
+}
+
+.switcher-arrow,
+.switcher-arrow:highlighted,
+.switcher-preview-backdrop {
+    border-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+}

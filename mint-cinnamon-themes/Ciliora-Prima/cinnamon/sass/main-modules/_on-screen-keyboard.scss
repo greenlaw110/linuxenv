@@ -1,0 +1,50 @@
+/* ===================================================================
+   ! On screen keyboard
+   ===================================================================*/
+
+#keyboard {
+    border-image: url("background-assets/keyboard-bg.svg") 7;
+}
+
+.keyboard-layout {
+    spacing: 8px;
+    padding: 12px;
+}
+
+.keyboard-row {
+    spacing: 15px;
+}
+
+.keyboard-key {
+    border-image: url("button-assets/button.svg") 7;
+    padding: 16px;
+    color: $text-primary;
+    font-size: 12pt;
+    font-weight: bold;
+
+    &:hover {
+        border-image: url("button-assets/button-hover.svg") 7;
+    }
+
+    &:checked,
+    &:active {
+        border-image: url("button-assets/button-pressed.svg") 7;
+    }
+
+    &:grayed {
+        border-image: url("button-assets/button-insensitive.svg") 7;
+        color: $text-disabled;
+    }
+}
+
+.keyboard-subkeys {
+    border-image: url("background-assets/popup.svg") 8;
+    padding: 0;
+    -arrow-border-radius: 0;
+    -arrow-background-color: transparent;
+    -arrow-border-color: transparent;
+    -arrow-border-width: 1px;
+    -arrow-base: 16px;
+    -arrow-rise: 0;
+    -boxpointer-gap: 2px;
+}

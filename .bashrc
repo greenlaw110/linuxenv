@@ -101,3 +101,6 @@ fi
 stty ixoff -ixon
 
 [ -r /home/luog/.byobu/prompt ] && . /home/luog/.byobu/prompt   #byobu-prompt#
+
+export NVM_DIR="/home/luog/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

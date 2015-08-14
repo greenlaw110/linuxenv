@@ -1,0 +1,29 @@
+// Grey text uses alpha values of white & black.
+$text-primary:   alpha(#fff, 1);
+$text-secondary: alpha(#fff, .5);
+$text-disabled:  alpha(#fff, .15);
+
+$text-primary-invert: alpha(#000, .75);
+
+// ------------------------------------------------------------
+
+// Symbolic icons don't work with alpha values.
+// Because of this, grey symbolic icons use hex values.
+$icon-primary:   #fff;
+$icon-secondary: #999;
+$icon-disabled:  #444;
+
+$icon-primary-invert: #fff;
+
+// ------------------------------------------------------------
+
+$accent: #668694;
+
+// ------------------------------------------------------------
+
+// The following selectors use modified/different colors:
+//  .cinnamon-link
+//  .popup-menu-boxpointer
+//  .popup-slider-menu-item
+//  .expo-workspaces-name-entry
+//  .keyboard-subkeys

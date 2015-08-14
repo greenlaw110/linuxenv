@@ -1,0 +1,109 @@
+/* ===================================================================
+   ! Popup Menus
+   ===================================================================*/
+
+.popup-menu {
+    min-width: 100px;
+
+    &-boxpointer {
+        padding: 0;
+        -arrow-border-radius: 0;
+        -arrow-background-color: alpha(#131619, .75);
+        -arrow-border-color: rgba(0, 0, 0, .9);
+        -arrow-border-width: 1px;
+        -arrow-base: 12px;
+        -arrow-rise: 6px;
+        -boxpointer-gap: 2px;
+    }
+
+    &-content {
+        border-image: url("background-assets/popup-inside.svg") 9;
+        padding: .7em 0;
+        color: $text-primary;
+    }
+
+    &-icon, StIcon {
+        icon-size: 16px;
+        color: $icon-primary;
+    }
+
+    &-item {
+        padding: .4em 1.3em;
+        spacing: .8em;
+
+        &:active {
+            border-image: url("background-assets/hover.svg") 9;
+            color: $text-primary;
+
+            .popup-menu-icon, StIcon {
+                color: $icon-primary;
+            }
+        }
+
+        &:insensitive {
+            font-weight: normal;
+            color: $text-disabled;
+        }
+    }
+
+    &-item-dot {/*!*/}
+}
+
+
+.popup-sub-menu {
+    border-image: url("background-assets/submenu-bg.svg") 9;
+    box-shadow: none;
+    background-gradient-direction: none;
+    padding: 12px 0;
+    color: $text-primary;
+
+    .popup-menu-item:active {
+        border-image: url("background-assets/hover.svg") 9;
+        color: $text-primary;
+    }
+}
+
+.popup-submenu-menu-item:open {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.popup-combo-menu {
+    border-image: url("background-assets/popup.svg") 9;
+    padding: .8em .2em;
+    color: $text-primary;
+}
+
+.popup-separator-menu-item {
+    -gradient-height: 1px;
+    -gradient-start: rgba(0, 0, 0, 0);
+    -gradient-end: rgba(0, 0, 0, 0);
+    -margin-horizontal: 0;
+    background-image: url("misc-assets/separator.svg");
+    background-repeat: repeat;
+    height: 13px;
+}
+
+.popup-slider-menu-item {
+    -slider-height: 2px;
+    -slider-background-color: rgba(0, 0, 0, 0);
+    -slider-border-color: rgba(0, 0, 0, 0);
+    -slider-active-background-color: $accent;
+    -slider-active-border-color: rgba(0, 0, 0, 0);
+    -slider-border-width: 2px;
+    -slider-handle-radius: 5px;
+    color: $icon-primary;
+
+    border-image: url("widget-assets/slider.svg") 9 6 8 8;
+    border: 0 solid transparent;
+    min-width: 15em;
+    height: 16px;
+
+    .popup-menu-item:active & {
+        -slider-active-background-color: lighten($accent, 18%);
+    }
+}
+
+.popup-subtitle-menu-item {}
+
+.popup-inactive-menu-item { color: $text-secondary; }

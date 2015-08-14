@@ -1,0 +1,108 @@
+/* ===================================================================
+   ! Popup Menus
+   ===================================================================*/
+
+.popup-menu {
+    min-width: 100px;
+
+    &-boxpointer {
+        -arrow-border-radius: 0;
+        -arrow-background-color: transparent;
+        -arrow-border-width: 0;
+        -arrow-border-color: transparent;
+        -arrow-base: 0;
+        -arrow-rise: 0px;
+        -boxpointer-gap: 0;
+    }
+
+    &-content {
+        border-image: url("background-assets/popup.svg") 7;
+        padding: 1em .2em;
+        color: $text-primary;
+    }
+
+    &-icon, StIcon {
+        icon-size: 16px;
+        color: $icon-primary;
+    }
+
+    &-item {
+        padding: .4em 1.6em;
+        spacing: 12px;
+
+        &:active {
+            border-image: url("background-assets/hover-2.svg") 8;
+            color: $text-primary;
+
+            .popup-menu-icon, StIcon {
+                color: $icon-primary;
+            }
+        }
+
+        &:insensitive {
+            font-weight: normal;
+            color: $text-disabled;
+        }
+    }
+
+    &-item-dot {/*!*/}
+}
+
+.popup-sub-menu {
+    border-image: url("background-assets/submenu.svg") 8;
+    box-shadow: none;
+    background-gradient-direction: none;
+    padding: .5em 0;
+    color: $text-primary;
+
+    .popup-menu-item:active {
+        border-image: url("background-assets/hover-2.svg") 8;
+        color: $text-primary;
+    }
+}
+
+.popup-submenu-menu-item:open {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.popup-combo-menu {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 1em .2em;
+    color: $text-primary;
+}
+
+.popup-separator-menu-item {
+    height: 1px;
+    -gradient-height: 1px;
+    -gradient-start: rgba(255, 255, 255 , 0.06);
+    -gradient-end: rgba(255, 255, 255 , 0.06);
+    -margin-horizontal: 2px;
+}
+
+.popup-slider-menu-item {
+    height: 1em;
+    min-width: 15em;
+    -slider-height: 0.1em;
+    -slider-background-color: #fff;
+    -slider-border-color: #fff;
+    -slider-active-background-color: saturate(tint($accent, 70%), 100%);
+    -slider-active-border-color: saturate(tint($accent, 70%), 100%);
+    -slider-border-width: 0;
+    -slider-handle-radius: 0.5em;
+
+    .popup-menu-item:active & {
+        height: 1em;
+        min-width: 15em;
+        -slider-height: 0.1em;
+        -slider-background-color: #fff;
+        -slider-border-color: #fff;
+        -slider-active-background-color: saturate(tint($accent, 70%), 100%);
+        -slider-active-border-color: saturate(tint($accent, 70%), 100%);
+        -slider-border-width: 0;
+        -slider-handle-radius: 0.5em;
+    }
+}
+
+.popup-subtitle-menu-item {}
+
+.popup-inactive-menu-item { color: $text-secondary; }
