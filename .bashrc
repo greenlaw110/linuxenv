@@ -104,3 +104,4 @@ stty ixoff -ixon
 
 export NVM_DIR="/home/luog/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+

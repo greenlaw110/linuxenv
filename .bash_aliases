@@ -7,7 +7,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias j='jobs -l'
-alias which='type -a'
+#alias which='type -a'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
@@ -59,4 +59,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Miscs
 alias psjava='ps aux | grep java | grep -v grep'
-alias npp='vim'
+alias npp='leafpad'

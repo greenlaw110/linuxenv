@@ -1,0 +1,2 @@
+#!/bin/sh
+mvn exec:exec -Dexec.args="-classpath %classpath -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5461"
