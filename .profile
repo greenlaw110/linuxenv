@@ -21,3 +21,4 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
+export M2_HOME=/usr/local/apache-maven-3.3.9

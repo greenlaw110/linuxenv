@@ -1,6 +1,7 @@
 alias cls=clear
 alias home=cd
 alias rsrc='. ~/.bashrc'
+alias vi='vim'
 alias vir='vim -R'
 alias rm='rm -i'
 alias cp='cp -i'
