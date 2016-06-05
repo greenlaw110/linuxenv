@@ -26,3 +26,5 @@ if [ -d "$HOME/bin" ] ; then
 fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
 export JAVA_HOME=/usr/lib/jvm/jdk
+export PATH="$PATH:/opt/play"
+

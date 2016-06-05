@@ -1,6 +1,4 @@
-if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
-   set fileencodings=utf-8,latin1
-endif
+set nocompatible              " be iMproved, required
 
 " Mappings to access buffers (don't use "\p" because a
 " delay before pressing "p" would accidentally paste).
@@ -115,10 +113,9 @@ endif
 set ff=unix
 if has("win32")
     set guifont=Consolas:h12
-    colorscheme molokai
-else
-    colorscheme slate
 endif
+" colorscheme molokai
+colorscheme turbo
 
 " Mat's tip
 "----------------------------------

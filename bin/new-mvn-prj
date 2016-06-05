@@ -1,0 +1,2 @@
+#!/bin/sh
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=$1 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

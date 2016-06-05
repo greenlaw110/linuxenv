@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for gitdir in `find ./ -name .git`; 
+    do 
+        workdir=${gitdir%/*}; 
+        echo; 
+        echo $workdir; 
+        git --git-dir=$gitdir --work-tree=$workdir status; 
+    done

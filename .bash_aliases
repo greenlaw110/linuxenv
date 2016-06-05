@@ -32,7 +32,6 @@ alias lt='ls -ltr'         # sort by date, most recent last
 alias lm='ls -al |more'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 alias l='ls -CF'
-alias tree='tree -Csu'     # nice alternative to 'recursive ls'
 
 alias more='less'
 
@@ -49,10 +48,14 @@ fi
 
 # some aliases for typo
 alias xs='cd'
-alias vf='cd'
 alias moer='more'
 alias moew='more'
 alias kk='ll'
+
+# aliases for varierity
+alias vf='variety -f'
+alias vd='variety -t'
+alias vn='variety -n'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -61,3 +64,4 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Miscs
 alias psjava='ps aux | grep java | grep -v grep'
 alias npp='leafpad'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'

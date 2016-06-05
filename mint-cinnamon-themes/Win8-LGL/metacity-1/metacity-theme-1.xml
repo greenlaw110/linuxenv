@@ -66,7 +66,7 @@
 
 <!-- window focused -->
 <draw_ops name="draw_titlebar1">
-	<rectangle color="#4682c8" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="#43a4ea" x="0" y="0" width="width" height="height" filled="true"/>
     <!-- <tint color="#4682c8" alpha="0.2" x="0" y="0" width="width" height="height"/> -->
 	<line color="#5284bc" x1="0" y1="0" x2="0" y2="height"/>
 	<line color="#5284bc" x1="0" y1="0" x2="width" y2="0"/>
@@ -75,19 +75,19 @@
 </draw_ops>
 
 <draw_ops name="draw_ledge1">
-	<rectangle color="#4682c8" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="#43a4ea" x="0" y="0" width="width" height="height" filled="true"/>
 	<line color="#5284bc" x1="0" y1="0" x2="0" y2="height"/>
 	<line color="#5b93d1" x1="width-1" y1="0" x2="width-1" y2="height"/>
 </draw_ops>
 
 <draw_ops name="draw_redge1">
-	<rectangle color="#4682c8" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="#43a4ea" x="0" y="0" width="width" height="height" filled="true"/>
 	<line color="#5b93d1" x1="0" y1="0" x2="0" y2="height"/>
 	<line color="#5284bc" x1="width-1" y1="0" x2="width-1" y2="height"/>
 </draw_ops>
 
 <draw_ops name="draw_bottomedge1">
-	<rectangle color="#4682c8" x="0" y="0" width="width" height="height" filled="true"/>
+	<rectangle color="#43a4ea" x="0" y="0" width="width" height="height" filled="true"/>
 	<line color="#5284bc" x1="0" y1="0" x2="0" y2="height"/>
 	<line color="#5b93d1" x1="left_width-1" y1="0" x2="width-left_width" y2="0"/>
 	<line color="#5284bc" x1="width-1" y1="0" x2="width-1" y2="height-1"/>
@@ -131,8 +131,11 @@
 
 <draw_ops name="title_text">
   <!--<clip x="0" y="0" width="width-SpacerWidth" height="height"/>-->
-  <title color="#282828"
+  <!-- <title color="#282828"
          x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing"
+         y="1 `max` ((height-title_height)/2)"/> -->
+  <title color="#aaa"
+         x="8"
          y="1 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
@@ -142,8 +145,11 @@
 </draw_ops>
 
 <draw_ops name="title_focused">
-  <title color="#fff"
+  <!-- <title color="#fff"
          x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing"
+         y="1 `max` ((height-title_height)/2)"/> -->
+  <title color="#fff"
+         x="8"
          y="1 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
