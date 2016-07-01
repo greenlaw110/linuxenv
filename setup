@@ -16,3 +16,4 @@ chmod +x ~/bin/*
 chmod +x ~/bin_local/*
 
 sh ~/env/setup.mac
+sh ~/env/setup.git
