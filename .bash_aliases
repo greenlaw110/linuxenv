@@ -21,8 +21,8 @@ alias s2ram='sudo /usr/sbin/s2ram'
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls)
 #-------------------------------------------------------------
-alias ll="ls -l --group-directories-first"
-alias ls='ls -hF --color'  # add colors for filetype recognition
+alias ll="ls -l"
+alias ls='ls -hF -G'  # add colors for filetype recognition
 alias la='ls -Al'          # show hidden files
 alias lx='ls -lXB'         # sort by extension
 alias lk='ls -lSr'         # sort by size, biggest last
