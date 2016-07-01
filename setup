@@ -13,9 +13,9 @@ ln -sf ~/env/.vim .vim
 ln -sf ~/env/.vimrc .vimrc
 rm -f .themes
 ln -sf ~/env/mint-cinnamon-themes .themes
-mkdir -p /home/luog/.config/fontconfig
+mkdir -p ~/.config/fontconfig
 ln -sf ~/env/.config/fontconfig/fonts.conf ~/.config/fontconfig/fonts.conf
-mkdir -p /home/luog/.config/gtk-3.0
+mkdir -p ~/.config/gtk-3.0
 ln -sf ~/env/.config/gtk-3.0/gtk.css ~/.config/gtk-3.0/gtk.css
 chmod +x ~/bin/*
 chmod +x ~/bin_local/*
