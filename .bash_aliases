@@ -65,3 +65,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias psjava='ps aux | grep java | grep -v grep'
 alias npp='leafpad'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# MAC specific
+alias hidden='defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder'
+alias nohidden='defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder'

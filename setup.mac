@@ -3,3 +3,6 @@
 # setup KeyBindings for home/end key
 ln -s ~/env/KeyBindings ~/Library/KeyBindings
 echo KeyBindings setup. Please re-login to make it effective
+
+# allow display file location in Finder
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES && killall Finder
