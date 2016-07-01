@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# setup KeyBindings for home/end key
+ln -s ~/env/KeyBindings ~/Library/KeyBindings
+echo KeyBindings setup. Please re-login to make it effective

@@ -19,3 +19,5 @@ mkdir -p /home/luog/.config/gtk-3.0
 ln -sf ~/env/.config/gtk-3.0/gtk.css ~/.config/gtk-3.0/gtk.css
 chmod +x ~/bin/*
 chmod +x ~/bin_local/*
+
+sh ~/env/setup.mac
