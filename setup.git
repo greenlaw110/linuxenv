@@ -9,6 +9,6 @@ git config --global alias.co checkout
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.undo 'reset HEAD~1 --mixed'
 git config --global alias.amend 'commit -a --amend'
-git config --global alias.hist 'log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short'
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 git config --global alias.type 'cat-file -t'
 git config --global alias.dump 'cat-file -p'
