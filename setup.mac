@@ -13,3 +13,4 @@ brew update & brew install git bash-completion
 echo 'To control mouse/touchpad scroll direction, go http://pilotmoon.com/scrollreverser/'
 echo 'To display/edit full path in Finder, go https://bahoom.com/finderpath/'
 echo 'To capture screenshot and edit it, go https://evernote.com/intl/zh-cn/skitch/'
+echo 'To download more fonts, go https://www.fonts.com/web-fonts/google'
