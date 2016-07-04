@@ -25,6 +25,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$HOME/bin_local:$PATH"
 fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
-export JAVA_HOME=/usr/lib/jvm/jdk
 export PATH="$PATH:/opt/play"
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

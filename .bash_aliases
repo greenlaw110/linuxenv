@@ -68,4 +68,9 @@ alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # MAC specific
 alias hidden='defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder'
-alias nohidden='defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder'
+alias nohidden='defaults write com.apple.finder AppleShowAllFiles -bool NO && killall Finder'
+#alias scr-natural='defaults write ~/Library/Preferences/.GlobalPreferences com.apple.swipescrolldirection -bool TRUE && killall cfprefsd'
+#alias scr-normal='defaults write ~/Library/Preferences/.GlobalPreferences com.apple.swipescrolldirection -bool FALSE && killall cfprefsd'
+alias scr-natural='defaults write NSGlobalDomain com.apple.swipescrolldirection -bool TRUE && killall cfprefsd'
+alias scr-normal='defaults write NSGlobalDomain com.apple.swipescrolldirection -bool FALSE && killall cfprefsd'
+
