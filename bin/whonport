@@ -1,2 +1,2 @@
 #!/bin/sh
-fuser $1/tcp
+lsof -i tcp:$1
