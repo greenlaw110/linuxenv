@@ -20,11 +20,5 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$HOME/bin_local:$PATH"
-fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
-export JAVA_HOME=/usr/lib/jvm/jdk
-export PATH="$PATH:/opt/play"
 

@@ -105,3 +105,21 @@ stty ixoff -ixon
 export NVM_DIR="/home/luog/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export JAVA_HOME=/usr/lib/jvm/jdk
+export M2_HOME=/opt/maven
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+if [ -d "$HOME/bin_local" ] ; then
+  PATH="$HOME/bin_local:$PATH"
+fi
+if [ -d "$M2_HOME/bin" ] ; then
+  PATH="$M2_HOME/bin:$PATH"
+fi
+if [ -d "/opt/idea/bin" ] ; then
+  PATH="/opt/idea/bin:$PATH"
+fi
+if [ -d "/opt/play" ]; then
+  PATH="/opt/play:$PATH"
+fi
