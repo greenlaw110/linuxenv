@@ -4,6 +4,7 @@
 git config --global alias.st status
 git config --global alias.br branch
 git config --global alias.ciam 'commit -a -m'
+git config --global alias.wip 'commit -am "WIP"'
 git config --global alias.wpi 'commit -am "WIP"'
 git config --global alias.co checkout
 git config --global alias.last 'log -1 HEAD'
