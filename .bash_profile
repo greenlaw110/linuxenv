@@ -22,3 +22,4 @@ fi
 
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
 
+eval $(thefuck --alias)

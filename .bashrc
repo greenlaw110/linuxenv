@@ -97,6 +97,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export RESIN_HOME=/usr/local/share/resin
+if [ -d "$RESIN_HOME/bin" ]; then
+    PATH=$RESIN_HOME/bin:$PATH
+fi
+
 # prevent ctrl-s halt for screen
 stty ixoff -ixon
 
@@ -123,3 +128,11 @@ fi
 if [ -d "/opt/play" ]; then
   PATH="/opt/play:$PATH"
 fi
+if [ -d "$HOME/act/startkit" ]; then
+  PATH="$HOME/act/startkit:$PATH"
+fi
+if [ -d "/snap/bin" ]; then
+  PATH="$PATH:/snap/bin"
+fi
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

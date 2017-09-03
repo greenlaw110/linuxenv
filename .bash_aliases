@@ -61,7 +61,26 @@ alias vn='variety -n'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# quick cd
+alias yabonza='cd ~/p/yabonza/svc'
+alias yab='cd ~/p/yabonza/svc'
+alias download='cd ~/Downloads'
+alias down='cd ~/Downloads'
+alias act='cd ~/act/act'
+alias act-morphia='cd ~/act/morphia'
+alias act-ebean='cd ~/act/ebean'
+alias act-ebean2='cd ~/act/ebean2'
+alias act-demo='cd ~/act/samples'
+alias act-sample='cd ~/act/samples'
+alias act-aaa='cd ~/act/aaa'
+alias otool='cd ~/p/osgl/tool'
+alias ostorage='cd ~/p/osgl/storage'
+alias omvc='cd ~/p/osgl/mvc'
+alias ohttp='cd ~/p/osgl/http'
+alias osgl='cd ~/p/osgl'
+
 # Miscs
 alias psjava='ps aux | grep java | grep -v grep'
 alias npp='leafpad'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias fuck-it='export THEFUCK_REQUIRE_CONFIRMATION=False; fuck; export THEFUCK_REQUIRE_CONFIRMATION=True'

@@ -1,0 +1,2 @@
+#!/bin/bash
+git-commit-count | xargs  | sed -e 's/\ /+/g' | bc

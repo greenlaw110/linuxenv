@@ -22,4 +22,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
 export M2_HOME=/opt/maven
-export JAVA_TOOL_OPTIONS="-Djava.security.egd=file:/dev/./urandom -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+export JAVA_TOOL_OPTIONS="-Djava.security.egd=file:/dev/./urandom -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djava2d.font.loadFontConf=true"
