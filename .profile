@@ -21,5 +21,12 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
+
+if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
+   export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
+fi
+
+export PATH="/usr/lib/jvm/jdk/bin:$PATH"
+
 export M2_HOME=/opt/maven
 export JAVA_TOOL_OPTIONS="-Djava.security.egd=file:/dev/./urandom -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djava2d.font.loadFontConf=true"

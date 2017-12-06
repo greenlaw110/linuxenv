@@ -1,0 +1,5 @@
+#!/bin/sh
+BASE=/usr/lib/jvm
+sudo rm -f $BASE/jdk
+sudo ln -s $BASE/jdk8 $BASE/jdk
+
