@@ -134,5 +134,7 @@ fi
 if [ -d "/snap/bin" ]; then
   PATH="$PATH:/snap/bin"
 fi
-
+if [ -d "$HOME/dockit" ] ; then
+  PATH="$HOME/dockit:$PATH"
+fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
