@@ -1,7 +1,0 @@
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-#bookmarks-view treechildren {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
