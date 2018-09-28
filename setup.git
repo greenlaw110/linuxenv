@@ -1,5 +1,4 @@
 #!/bin/sh
-
 # setup git aliases
 git config --global alias.st status
 git config --global alias.br branch
