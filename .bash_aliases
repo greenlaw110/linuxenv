@@ -35,6 +35,9 @@ alias l='ls -CF'
 
 alias more='less'
 
+# docker
+alias clean-docker-image='docker volume rm $(docker volume ls -qf dangling=true)'
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -84,3 +87,5 @@ alias psjava='ps aux | grep java | grep -v grep'
 alias npp='leafpad'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias fuck-it='export THEFUCK_REQUIRE_CONFIRMATION=False; fuck; export THEFUCK_REQUIRE_CONFIRMATION=True'
+alias clip="xclip -selection c"
+alias getclip="xclip -selection c -o"

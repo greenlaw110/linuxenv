@@ -102,6 +102,10 @@ if [ -d "$RESIN_HOME/bin" ]; then
     PATH=$RESIN_HOME/bin:$PATH
 fi
 
+if [ -d "$HOME/gocode" ]; then
+    export GOPATH=$HOME/gocode
+fi
+
 # prevent ctrl-s halt for screen
 stty ixoff -ixon
 
@@ -113,28 +117,9 @@ export NVM_DIR="/home/luog/.nvm"
 export JAVA_HOME=/usr/lib/jvm/jdk
 export M2_HOME=/opt/maven
 
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-if [ -d "$HOME/bin_local" ] ; then
-  PATH="$HOME/bin_local:$PATH"
-fi
-if [ -d "$M2_HOME/bin" ] ; then
-  PATH="$M2_HOME/bin:$PATH"
-fi
-if [ -d "/opt/idea/bin" ] ; then
-  PATH="/opt/idea/bin:$PATH"
-fi
-if [ -d "/opt/play" ]; then
-  PATH="/opt/play:$PATH"
-fi
-if [ -d "$HOME/act/startkit" ]; then
-  PATH="$HOME/act/startkit:$PATH"
-fi
-if [ -d "/snap/bin" ]; then
-  PATH="$PATH:/snap/bin"
-fi
-if [ -d "$HOME/dockit" ] ; then
-  PATH="$HOME/dockit:$PATH"
-fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/luog/.sdkman"
+[[ -s "/home/luog/.sdkman/bin/sdkman-init.sh" ]] && source "/home/luog/.sdkman/bin/sdkman-init.sh"
+

@@ -1,5 +1,5 @@
 #!/bin/sh
 BASE=/usr/lib/jvm
-sudo rm -f $BASE/jdk
-sudo ln -s $BASE/jdk7 $BASE/jdk
+rm -f $BASE/jdk
+ln -s $BASE/jdk7 $BASE/jdk
 

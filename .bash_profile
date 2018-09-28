@@ -20,6 +20,34 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+if [ -d "$HOME/bin_local" ] ; then
+  PATH="$HOME/bin_local:$PATH"
+fi
+if [ -d "$M2_HOME/bin" ] ; then
+  PATH="$M2_HOME/bin:$PATH"
+fi
+if [ -d "/opt/idea/bin" ] ; then
+  PATH="/opt/idea/bin:$PATH"
+fi
+if [ -d "/opt/play" ]; then
+  PATH="/opt/play:$PATH"
+fi
+if [ -d "$HOME/act/startkit" ]; then
+  PATH="$HOME/act/startkit:$PATH"
+fi
+if [ -d "/snap/bin" ]; then
+  PATH="$PATH:/snap/bin"
+fi
+if [ -d "$HOME/dockit" ] ; then
+  PATH="$HOME/dockit:$PATH"
+fi
+if [ -d "$HOME/.cargo/bin" ] ; then
+  PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
 
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
