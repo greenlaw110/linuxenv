@@ -51,3 +51,5 @@ fi
 `echo $- | grep -qs i` && which byobu-launcher > /dev/null && byobu-launcher
 
 #eval $(thefuck --alias)
+
+export PATH="/home/luog/.sdkman/candidates/gradle/current/bin:/home/luog/.nvm/versions/node/v8.9.1/bin:/usr/lib/jvm/jdk/bin:/home/luog/.local/bin:/home/luog/bin_local:/home/luog/bin:/usr/lib/jvm/jdk/bin:/opt/play:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/maven/bin:/opt/tomcat/bin:/opt/sbt/bin:/snap/bin:~/.cargo/bin:/opt/mssql-tools/bin:/home/luog/.vimpkg/bin"

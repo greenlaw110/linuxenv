@@ -81,6 +81,7 @@ alias ostorage='cd ~/p/osgl/storage'
 alias omvc='cd ~/p/osgl/mvc'
 alias ohttp='cd ~/p/osgl/http'
 alias osgl='cd ~/p/osgl'
+alias osg=`cd ~/p/osgl`
 
 # Miscs
 alias psjava='ps aux | grep java | grep -v grep'
