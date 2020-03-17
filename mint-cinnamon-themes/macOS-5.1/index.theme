@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=macOS
+Comment=A theme by Christian Medel (Elbullazul)
+Comment=4.0
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=macOS
+MetacityTheme=macOS
+IconTheme=La Capitaine
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:

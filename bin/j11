@@ -1,0 +1,5 @@
+#!/bin/sh
+BASE=/usr/lib/jvm
+rm -f $BASE/jdk
+ln -s $BASE/jdk11 $BASE/jdk
+

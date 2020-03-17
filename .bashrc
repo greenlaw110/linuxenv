@@ -61,6 +61,8 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
+# git branch prompt
+PS1='\[\033[0;32m\]\u\[\033[0;36m\] @ \h \w\[\033[0;32m\]$(__git_ps1)\n└─>\[\033[0m\]\$ '
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
@@ -125,4 +127,10 @@ export SDKMAN_DIR="/home/luog/.sdkman"
 
 export PATH="$PATH:/opt/mssql-tools/bin"
 
-export PATH="/home/luog/.sdkman/candidates/gradle/current/bin:/home/luog/.nvm/versions/node/v8.9.1/bin:/usr/lib/jvm/jdk/bin:/home/luog/.local/bin:/home/luog/bin_local:/home/luog/bin:/usr/lib/jvm/jdk/bin:/opt/play:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/maven/bin:/opt/tomcat/bin:/opt/sbt/bin:/snap/bin:~/.cargo/bin:/opt/mssql-tools/bin:/home/luog/.vimpkg/bin"
+export PATH="/home/luog/.sdkman/candidates/gradle/current/bin:/home/luog/.nvm/versions/node/v8.9.1/bin:/usr/lib/jvm/jdk/bin:/home/luog/.local/bin:/home/luog/bin_local:/home/luog/bin:/usr/lib/jvm/jdk/bin:/opt/play:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/maven/bin:/opt/tomcat/bin:/opt/sbt/bin:/snap/bin:~/.cargo/bin:/opt/mssql-tools/bin:/home/luog/.vimpkg/bin:~/anaconda3/bin:/usr/local/go/bin"
+
+export PATH="$PATH:/opt/mssql-tools/bin"
+#export MAVEN_OPTS="-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=16161"
+
+source <(kubectl completion bash | sed s/kubectl/k/g)
+source ~/.bash-powerline.sh

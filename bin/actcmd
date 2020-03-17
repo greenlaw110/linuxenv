@@ -3,4 +3,4 @@ PORT=5461
 if [[ $# -gt 0 ]]; then
     PORT=$1
 fi
-rlwrap nc localhost $PORT
+stty -icanon -echo && nc localhost $PORT ; stty icanon echo

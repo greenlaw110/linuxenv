@@ -37,6 +37,8 @@ alias more='less'
 
 # docker
 alias clean-docker-image='docker volume rm $(docker volume ls -qf dangling=true)'
+alias mk='minikube'
+alias k='kubectl'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
