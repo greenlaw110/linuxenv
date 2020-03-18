@@ -134,3 +134,5 @@ export PATH="$PATH:/opt/mssql-tools/bin"
 
 source <(kubectl completion bash | sed s/kubectl/k/g)
 source ~/.bash-powerline.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
