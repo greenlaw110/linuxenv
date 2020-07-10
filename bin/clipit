@@ -1,0 +1,5 @@
+#!/bin/bash
+# cat to clipboard
+#
+cat $1 | xclip -i -selection clipboard
+exit

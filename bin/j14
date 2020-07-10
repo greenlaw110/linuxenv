@@ -1,5 +1,5 @@
 #!/bin/sh
 BASE=/usr/lib/jvm
 rm -f $BASE/jdk
-ln -s $BASE/jdk9 $BASE/jdk
+ln -s $BASE/jdk14 $BASE/jdk
 

@@ -22,14 +22,15 @@ alias s2ram='sudo /usr/sbin/s2ram'
 # The 'ls' family (this assumes you use a recent GNU ls)
 #-------------------------------------------------------------
 alias ll="ls -l --group-directories-first"
+alias lla="ls -l -a --group-directories-first"
 alias ls='ls -hF --color'  # add colors for filetype recognition
-alias la='ls -Al'          # show hidden files
+alias la='ls -A'          # show hidden files
 alias lx='ls -lXB'         # sort by extension
 alias lk='ls -lSr'         # sort by size, biggest last
 alias lc='ls -ltcr'        # sort by and show change time, most recent last
 alias lu='ls -ltur'        # sort by and show access time, most recent last
 alias lt='ls -ltr'         # sort by date, most recent last
-alias lm='ls -al |more'    # pipe through 'more'
+alias lm='ls -al --color=never |less'    # pipe through 'more'
 alias lr='ls -lR'          # recursive ls
 alias l='ls -CF'
 
@@ -67,8 +68,6 @@ alias vn='variety -n'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # quick cd
-alias yabonza='cd ~/p/yabonza/svc'
-alias yab='cd ~/p/yabonza/svc'
 alias download='cd ~/Downloads'
 alias down='cd ~/Downloads'
 alias act='cd ~/act/act'
@@ -83,7 +82,7 @@ alias ostorage='cd ~/p/osgl/storage'
 alias omvc='cd ~/p/osgl/mvc'
 alias ohttp='cd ~/p/osgl/http'
 alias osgl='cd ~/p/osgl'
-alias osg=`cd ~/p/osgl`
+alias osg='cd ~/p/osgl'
 
 # Miscs
 alias psjava='ps aux | grep java | grep -v grep'
